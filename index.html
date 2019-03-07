@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("teddybg8.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 960px;
+  
+}
+.center {
+	width: 50%;
+	display: block;
+	margin-left: 200px;
+	margin-top: -100px;
+	padding: 0px;
+}
+
+.text {
+	color: #00fffa;
+	font-size: 22px;
+	text-shadow: 2px 2px #680030;
+	font-family: "Courier New", Courier, monospace;
+	margin-left: 5%;
+	margin-right: 40%;
+}
+
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 5%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 10%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: relative;
+  background-color: #555;
+  color: #00fffa;
+  font-size: 40px;
+  font-family: monospace;
+  padding: 20%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .topbtn {
+	top: -150px;
+	right: -1300%;
+}
+
+.container .bottombtn {
+	bottom: 150px;
+	right: -1250%;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+</style>
+</head>
+<body scroll="no" style="overflow: auto">
+
+<div class="bg">
+<br>
+  
+<p class="text"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </i></p>
+
+<div class="container">
+  	<img src="newsbtn.jpg">
+  	<button class="btn topbtn">BLOG</button>
+  </div>
+
+
+  <video class="center" controls>
+  	<source src="125_vid.mp4" type="video/mp4">
+  	Your browser does not support HTML5 video.
+  </video>
+
+  
+
+<p class="text"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </i></p>
+
+<div class="container">
+  	<img src="newsbtn.jpg">
+  	<button class="btn bottombtn">CONTACT</button>
+  </div>
+</div>
+</body>
+</html>
