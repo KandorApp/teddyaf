@@ -127,7 +127,7 @@ p {
 
 
 div#list-screen {
-  background-color: #141920;
+  background-color: rgba(186, 137, 167,0.8);
   position: absolute;
   top: 0;
   right: 0;
@@ -137,13 +137,13 @@ div#list-screen {
   display: none;
 }
 div#list-screen div#list-screen-header {
-  background-color: #141920;
+  background-color: rgba(100, 80, 153 ,0.7);
   padding: 15px;
   text-align: center;
   height: 55px;
   position: relative;
   color: white;
-  font-family: "Lato", sans-serif;
+  font-family: "JMHB", monospace;
   cursor: pointer;
 }
 div#list-screen div#list-screen-header img#up-arrow {
@@ -156,7 +156,7 @@ div#list-screen div#list-screen-header span.list-active-song-name {
   color: #fff;
   line-height: 25px;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: "JMHB", monospace;
   letter-spacing: 0.5px;
 }
 div#list-screen div#list {
@@ -164,7 +164,7 @@ div#list-screen div#list {
 }
 div#list-screen div#list div.song {
   padding: 15px;
-  background-color: #242b33;
+  background-color: rgba(100, 80, 153 ,0.7);
   margin-bottom: 1px;
   cursor: pointer;
   line-height: 24px;
@@ -176,7 +176,7 @@ div#list-screen div#list div.song span.song-number-now-playing {
 }
 div#list-screen div#list div.song span.song-number-now-playing span.number {
   opacity: 0.5;
-  font-family: "Lato", sans-serif;
+  font-family: "Oceanside", monospace;
   font-size: 14px;
   color: #fff;
   letter-spacing: 0.5px;
@@ -185,7 +185,7 @@ div#list-screen div#list div.song span.song-number-now-playing img.now-playing {
   display: none;
 }
 div#list-screen div#list div.song.amplitude-active-song-container {
-  background-color: #30363e;
+  background-color: rgba(86, 37, 67, 0.8)
 }
 div#list-screen div#list div.song.amplitude-active-song-container span.song-number-now-playing img.now-playing {
   display: inline-block;
@@ -200,7 +200,7 @@ div#list-screen div#list div.song div.song-meta-container {
   width: calc(100% - 80px);
 }
 div#list-screen div#list div.song div.song-meta-container span.song-name {
-  font-family: "Lato", sans-serif;
+  font-family: "JMHB", monospace;
   font-size: 14px;
   line-height: 16px;
   color: #55b560;
@@ -208,7 +208,7 @@ div#list-screen div#list div.song div.song-meta-container span.song-name {
   display: block;
 }
 div#list-screen div#list div.song div.song-meta-container span.song-artist-album {
-  font-family: "Lato", sans-serif;
+  font-family: "Oceanside", monospace;
   font-size: 12px;
   line-height: 14px;
   color: #fff;
@@ -218,7 +218,7 @@ div#list-screen div#list div.song div.song-meta-container span.song-artist-album
 div#list-screen div#list div.song span.song-duration {
   display: inline-block;
   opacity: 0.5;
-  font-family: "Lato", sans-serif;
+  font-family: monospace;
   font-size: 14px;
   color: #fff;
   letter-spacing: 0.5px;
@@ -237,7 +237,7 @@ div#list-screen div#list-screen-footer div#list-screen-meta-container {
   float: left;
 }
 div#list-screen div#list-screen-footer div#list-screen-meta-container span.song-name {
-  font-family: "Lato", sans-serif;
+  font-family: "JMHB", monospace;
   font-size: 16px;
   color: #fff;
   letter-spacing: 0.5px;
@@ -245,7 +245,7 @@ div#list-screen div#list-screen-footer div#list-screen-meta-container span.song-
 }
 div#list-screen div#list-screen-footer div#list-screen-meta-container div.song-artist-album {
   opacity: 0.5;
-  font-family: "Lato", sans-serif;
+  font-family: "Oceanside", monospace;
   font-size: 14px;
   color: #fff;
   letter-spacing: 0.5px;
@@ -299,7 +299,7 @@ div.player-header {
   margin-top: 40px;
   cursor: pointer;
   color: white;
-  font-family: "Lato", sans-serif;
+  font-family: "JMHB", monospace;
 }
 div.player-header img#down {
   position: absolute;
@@ -376,7 +376,7 @@ div#player-progress-bar-container progress#song-buffered-progress[value]::-moz-p
 }
 
 div#player-middle {
-  background-color: #000;
+  background-color: rgba(83, 178, 153 ,0.7);
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
@@ -385,9 +385,11 @@ div#player-middle {
   position: relative;
 }
 div#player-middle div#time-container {
+  opacity: 0.8;
   color: white;
+  font-family: monospace;
   width: 100%;
-  background-color: #000;
+  background-color: rgba(83, 178, 153 ,0.7);
   font-size: 14px;
   font-weight: bold;
 }
@@ -402,24 +404,24 @@ div#player-middle div#time-container span.amplitude-current-time {
   left: 5px;
 }
 div#player-middle span.song-name {
-  font-family: Lato, sans-serif;
-  font-size: 16px;
+  font-family: Oceanside, monospace;
+  font-size: 24px;
   color: #fff;
   letter-spacing: 0.5px;
-  line-height: 24px;
+  line-height: 30px;
   display: block;
 }
 div#player-middle div.song-artist-album {
-  opacity: 0.5;
-  font-family: Lato, sans-serif;
-  font-size: 14px;
-  color: #fff;
+  
+  font-family: Oceanside, monospace;
+  font-size: 30px;
+  color: rgba(200, 80, 153 ,0.7);
   letter-spacing: 0.5px;
   line-height: 16px;
 }
 
 div#player-bottom {
-  background-color: #192029;
+  background-color: rgba(83, 178, 153 ,0.7);
   padding-left: 25px;
   padding-right: 25px;
 }
