@@ -82,7 +82,7 @@ a.titlelink {
 .contact {
  position: -webkit-sticky; /* Safari */
  position: fixed;
- bottom: 0px;
+ bottom: -22px;
  right: 8px; 
  font-size: 20px;
 }
@@ -91,11 +91,11 @@ a.titlelink {
  font-family: monospace;
  position: -webkit-sticky; /* Safari */
  position: fixed;
- bottom: 5px;
+ bottom: -23px;
  left: 8px; 
  color: #00999a;
  text-shadow: 1px 1px #222222;
- font-size: 16px;
+ font-size: 12px;
 }
 
 /*g {

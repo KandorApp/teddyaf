@@ -67,11 +67,14 @@ a.titlelink {
 }
 
 .clairephotos {
- font-family: "BPTDS", monospace;
+ font-family: monospace;
  position: -webkit-sticky; /* Safari */
  position: fixed;
  bottom: 8px;
  left: 8px; 
+ font-size: 12px;
+ color: #00999a;
+ text-shadow: 1px 1px #222222;
 }
 
 g {
