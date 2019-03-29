@@ -48,7 +48,7 @@ body, html {
   padding: 2%;
 }
 
-.text {
+/*.text {
   color: #00fffa;
   font-size: 50px;
   text-shadow: 2px 2px #680030;
@@ -56,6 +56,16 @@ body, html {
   font-family: "JMHB", monospace;
   margin-left: 5%;
   margin-right: 40%;
+}
+*/
+
+.text {
+  color: #00fffa;
+  font-size: 18px;
+  text-shadow: 2px 2px #680030;
+  font-family: "Courier New", Courier, monospace;
+  font-family: "JMHB", monospace;
+  margin: 0 auto;
 }
 
 a.titlelink {
@@ -76,7 +86,7 @@ a.titlelink {
  font-size: 20px;
 }
 
-.clairphotos {
+.clairephotos {
  font-family: monospace;
  position: -webkit-sticky; /* Safari */
  position: fixed;
