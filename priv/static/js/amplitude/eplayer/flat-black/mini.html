@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AmplitudeJS Testing</title>
+
+    <!-- Include Resource Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>
+
+    <!-- Include font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet"> -->
+
+		<!--
+			Include Resource Javascript
+
+			NOTE: These are for handling things outside of the scope of AmplitudeJS
+		-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/foundation.min.js"></script>
+
+		<!-- Include Amplitude JS -->
+		<script type="text/javascript" src="../../dist/amplitude.js"></script>
+
+		<!-- Include Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+  </head>
+
+  <style>
+  body, html {
+    background: url("../../../leaf.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  </style>
+  <body>
+
+    <div class="row">
+      <div class="large-4 medium-6 small-12 large-centered medium-centered columns">
+        <div class="sticky">
+          <a class="titlelink" href="../../../index.html">teddyAF</p>
+          <a class="titlelink" href="../../../videos.html">Videos</p>
+          <a class="titlelink" href="../../../merchandise.html">Merchandise</p>
+        </div>
+        <br>
+        <div class="rsticky">
+          <a class="titlelink" href="mini.html">>MINI::EP</p>
+        </div>
+        <a class="titlelink" href="mailto:yerr@teddy.af"><i class="contact">yerr@teddy.af</i></a>
+        <a class="titlelink"><g class="clairphotos">photos Copr. Clair Pagano</g></a>
+
+        <div id="flat-black-player-container">
+            <div id="list-screen" class="slide-in-top">
+
+              <div id="list-screen-header" class="hide-playlist">
+                <img id="up-arrow" src="img/up.svg"/>
+                MINI::EP
+              </div>
+
+              <div id="list">
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+                  <span class="song-number-now-playing">
+                    <span class="number">1</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    x:xx
+                  <span>
+                </div>
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+                  <span class="song-number-now-playing">
+                    <span class="number">2</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="1"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    x:xx
+                  <span>
+                </div>
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
+                  <span class="song-number-now-playing">
+                    <span class="number">3</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="2"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    x:xx
+                  <span>
+                </div>
+                <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
+                  <span class="song-number-now-playing">
+                    <span class="number">4</span>
+                    <img class="now-playing" src="img/now-playing.svg"/>
+                  </span>
+
+                  <div class="song-meta-container">
+                    <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="3"></span>
+                    <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="3"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="3"></span></span>
+                  </div>
+
+                  <span class="song-duration">
+                    x:xx
+                  <span>
+                </div>
+              </div>
+
+              <div id="list-screen-footer">
+                <div id="list-screen-meta-container">
+                  <span data-amplitude-song-info="name" class="song-name"></span>
+
+                  <div class="song-artist-album">
+                    <span data-amplitude-song-info="artist"></span>
+                  </div>
+                </div>
+                <div class="list-controls">
+                  <div class="list-previous amplitude-prev"></div>
+                  <div class="list-play-pause amplitude-play-pause"></div>
+                  <div class="list-next amplitude-next"></div>
+                </div>
+              </div>
+            </div>
+            <div id="player-screen">
+              <div class="player-header down-header">
+                <img id="down" src="img/down.svg"/>
+                MINI::EP
+              </div>
+              <div id="player-top">
+                <img data-amplitude-song-info="cover_art_url"/>
+              </div>
+              <div id="player-progress-bar-container">
+                <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+                <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+              </div>
+              <div id="player-middle">
+                <div id="time-container">
+                  <span class="amplitude-current-time time-container"></span>
+                  <span class="amplitude-duration-time time-container"></span>
+                </div>
+                <div id="meta-container">
+                  <span data-amplitude-song-info="name" class="song-name"></span>
+
+                  <div class="song-artist-album">
+                    <span data-amplitude-song-info="artist"></span>
+                  </div>
+                </div>
+              </div>
+              <div id="player-bottom">
+                <div id="control-container">
+
+                  <div id="shuffle-container">
+                    <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+                  </div>
+
+                  <div id="prev-container">
+                    <div class="amplitude-prev" id="previous"></div>
+                  </div>
+
+                  <div id="play-pause-container">
+                    <div class="amplitude-play-pause" id="play-pause"></div>
+                  </div>
+
+                  <div id="next-container">
+                    <div class="amplitude-next" id="next"></div>
+                  </div>
+
+                  <div id="repeat-container">
+                    <div class="amplitude-repeat" id="repeat"></div>
+                  </div>
+
+                </div>
+
+                <div id="volume-container">
+                  <img src="img/volume.svg"/><input type="range" class="amplitude-volume-slider" step=".1"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+		Amplitude.init({
+      "bindings": {
+        37: 'prev',
+        39: 'next',
+        32: 'play_pause'
+      },
+			"songs": [
+				{
+          "name": "125",
+          "artist": "teddyAF",
+          "album": "MINI",
+          "url": "songs/125.mp3",
+          "cover_art_url": "../album-art/125.png"
+        },
+        {
+          "name": "NEST",
+          "artist": "teddyAF",
+          "album": "MINI",
+          "url": "songs/NEST.mp3",
+          "cover_art_url": "../album-art/NEST.png"
+        },
+        {
+          "name": "chauncey",
+          "artist": "teddyAF",
+          "album": "MINI",
+          "url": "songs/chauncey.mp3",
+          "cover_art_url": "../album-art/chauncey.png"
+        },
+        {
+          "name": "SODB",
+          "artist": "teddyAF",
+          "album": "MINI",
+          "url": "songs/125.mp3",
+          "cover_art_url": "../album-art/SODB.png"
+        }
+			]
+		});
+
+	</script>
+
+  <!--
+    Include UX functions JS
+
+    NOTE: These are for handling things outside of the scope of AmplitudeJS
+  -->
+  <script type="text/javascript" src="js/functions.js"></script>
+</html>

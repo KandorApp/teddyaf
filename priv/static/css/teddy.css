@@ -1,0 +1,122 @@
+body, html {
+  position:relative;
+
+  height: 100%;
+  margin: 0;
+
+  background: url("../images/loons.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Oceanside;
+  src: url("../fonts/Oceanside.ttf");
+}
+
+@font-face {
+  font-family: JMHB;
+  src: url("../fonts/JMHB.ttf");
+}
+
+@font-face {
+  font-family: BPTDS;
+  src: url("../fonts/BPTDS.otf");
+}
+
+
+<!-- a:link {
+  text-decoration: none;
+} -->
+
+ 
+.center {
+  width: 72%;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.text {
+  color: #00fffa;
+  font-size: 18px;
+  text-shadow: 2px 2px #680030;
+  font-family: "Courier New", Courier, monospace;
+  font-family: "JMHB", monospace;
+  margin: 0 auto;
+}
+
+a.titlelink {
+  color: #00fffa;
+  font-size: 50px;
+  text-shadow: 2px 2px #680030;
+  font-family: "Courier New", Courier, monospace;
+  font-family: "Oceanside", monospace;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.contact {
+ position: -webkit-sticky; /* Safari */
+ position: fixed;
+ bottom: 4px;
+ right: 8px; 
+ font-size: 20px;
+}
+
+.clairphotos {
+ font-family: "BPTDS", monospace;
+ position: -webkit-sticky; /* Safari */
+ position: fixed;
+ bottom: 8px;
+ left: 8px; 
+}
+
+g {
+  color: #00999a;
+  text-shadow: 1px 1px #222222;
+  font-size: 16px;
+}
+
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  top: 4px;
+  left: 8px;
+}
+
+.rsticky {
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  top: 36px;
+  right: 8px;
+}
+.products {
+/*  border: 3px solid green;*/  
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product {
+  padding: 20px;
+}
+
+
+p {
+  margin-bottom: -50px;
+}
+
+h4 {
+  color: #00fffa;
+  text-shadow: 1px 1px rgba(103,72,112,0.7);
+}
+
+
+
+img#product_img {
+  max-width: 72%;
+  height: auto;
+}
